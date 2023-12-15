@@ -119,8 +119,14 @@ function init() {
                     clickedCell.style.backgroundSize = 'cover'
                     hitShipTrackerPlayer.push(cellIndex) 
                     playExplosionSound()
+                    clickedCell[cellIndex] = turn
+    
+                    turn*= -1
+                        if (turn === 1) {
+                            messageEl.innerText = 'Player Turn';
+                        } 
                       
-                    console.log(hitShipTrackerPlayer)                
+                    // console.log(hitShipTrackerPlayer)                
                         if (hitShipTrackerPlayer.length === 17)
                         {messageEl.innerText = 'Player Wins'
                         winner = true
@@ -175,8 +181,7 @@ function init() {
                 playExplosionSound()
                 hitShipTrackerComputer.push(target)  
                 occupiedCellsComGrid.push(target)
-                    console.log(hitShipTrackerComputer)                
-                        if (hitShipTrackerComputer.length === 17)
+                    if (hitShipTrackerComputer.length === 17)
                         {messageEl.innerText = 'Computer Wins'
                         winner = true
                         setTimeout(() => { 

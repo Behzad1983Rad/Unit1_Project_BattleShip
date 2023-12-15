@@ -2,12 +2,14 @@
     box-sizing: border-box;
 }
 
+
 body {
     height: 100vh;
     margin: 0;
     background-image: url("../img/pexels-photo-1435752.jpeg");
     font-family: 'Open Sans', sans-serif;
     background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
     
     
     
