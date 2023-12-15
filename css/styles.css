@@ -10,6 +10,7 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     
     
+    
 }
 
 header {
@@ -152,13 +153,13 @@ h2 {
 }
 
 .player-text {
-    top: 250px;
+    top: 165px;
     left: 25px;
 }
 
 
 .computer-text {
     left: 25px;
-    top: 515px;
+    top: 450px;
 
 }
