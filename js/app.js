@@ -135,7 +135,7 @@ function init() {
                         }, 10.0 * 1000);
                         }
                 } else {
-                    clickedCell.style.backgroundColor = 'blue';
+                    clickedCell.style.backgroundColor = 'yellow';
                     missedHitsPlayer.push(cellIndex)
                 }
             }
@@ -192,7 +192,7 @@ function init() {
                 
                 
             } else {
-                cells[target].style.backgroundColor = 'blue';
+                cells[target].style.backgroundColor = 'yellow';
                 occupiedCellsComGrid.push(target)
             }
         }
